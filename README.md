@@ -32,3 +32,16 @@ toBeGreaterThanOrEqual() // mayor o igual
 toBeGreaterThan() // mayor
 toBeLowerThan() // menor
 toBeLowerThanOrEqual() // menor o igual
+toHaveBeenCalled() // saber si fue llamado una funcion
+
+
+
+// espias
+
+// sirve para simular que llega informacion
+ spyOn( servicio, 'getMedicos' ).and.callFake( ()=> {
+         return from([ medicos ]); // simulo informacion enviada por el servicio de la url
+ });
+
+
+
